@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: 周敏
+  Date: 2019/7/24
+  Time: 15:29
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>注册</title>
+    <title>登录</title>
 </head>
 <body>
-<form action="register" method="post">
+<form action="Login" method="post">
     <table border="1" align="center" width="500">
         <tr>
             <td><label for="username">用户名</label></td>

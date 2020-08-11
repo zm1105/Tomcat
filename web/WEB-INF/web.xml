@@ -3,20 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
-        <servlet-name>Servlet</servlet-name>
-        <servlet-class>com.demo01.Servlet</servlet-class>
-    </servlet>
+
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
-        <servlet-class>com.demo02.RegisterServlet</servlet-class>
+        <servlet-class>com.student.servelt.RegisterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Servlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
+
 </web-app>
