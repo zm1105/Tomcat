@@ -57,5 +57,14 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://F:/Java_Basics_2020.04.23/02_课件/第二阶段/02模块二 JDBC&amp;XML/02 任务二 (数据库连接池&amp;DBUtils)/03_软件/DBUtils/commons-dbutils-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

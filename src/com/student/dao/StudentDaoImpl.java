@@ -15,10 +15,15 @@ import java.util.List;
 public class StudentDaoImpl implements studentDao {
 
   @Override
-  public List<User> findAll() throws SQLException {
-    QueryRunner queryRunner = new QueryRunner(JdbcDruidUtil.getDataSource());
-    String sql = "select * from user";
-   return queryRunner.query(sql, new BeanListHandler<User>(User.class));
+  public List<User> findAll() {
+    try {
+      QueryRunner queryRunner = new QueryRunner(JdbcDruidUtil.getDataSource());
+      String sql = "select * from user";
+      return queryRunner.query(sql, new BeanListHandler<User>(User.class));
+    } catch (SQLException e) {
+      e.printStackTrace();
+      return null;
+    }
   }
 
   @Override

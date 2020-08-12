@@ -19,13 +19,18 @@ import java.util.List;
  * @author : zhoumin
  * @data :  2020/8/12 9:53
  */
-@WebServlet(name = "SearchServlet",urlPatterns = "/Search")
+@WebServlet(name = "SearchServlet", urlPatterns = "/Search")
 public class SearchServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     try {
       StudentService studentService = new StudentServiceImpl();
-      List<User> all = studentService.findAll();
+      List<User> userList = studentService.findAll();
+      for (User user : userList) {
+        System.out.println(user + "cha xun quan bu");
+      }
+      request.getSession().setAttribute("userList", userList);
+      request.getRequestDispatcher("list.jsp").forward(request, response);
 
     } catch (SQLException e) {
       e.printStackTrace();
