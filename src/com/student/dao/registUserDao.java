@@ -30,6 +30,7 @@ public class registUserDao {
       preparedStatement.setString(2, user.getPassword());
       int i = preparedStatement.executeUpdate();
       return i;
+
     } catch (SQLException e) {
       e.printStackTrace();
       return 0;
