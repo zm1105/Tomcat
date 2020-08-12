@@ -1,7 +1,8 @@
 package com.student.dao;
 
 
-import com.student.entity.user;
+import com.student.entity.User;
+import com.student.util.JdbcDruidUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,25 +16,25 @@ import java.sql.SQLException;
 public class userDaoImpl implements UserDao {
 
   @Override
-  public user loginUser(user user) {
+  public User loginUser(User user) {
     Connection connection = null;
     PreparedStatement ps = null;
     ResultSet resultSet = null;
     try {
-      connection = com.student.common.util.JdbcDruidUtil.getConnection();
+      connection = JdbcDruidUtil.getConnection();
       String sql = "select * from user where username=? and password=?";
       ps = connection.prepareStatement(sql);
       ps.setString(1, user.getUsername());
       ps.setString(2, user.getPassword());
       resultSet = ps.executeQuery();
       if (resultSet.next()) {
-        user tu = new user(resultSet.getNString("username"), resultSet.getNString("password"));
+        User tu = new User(resultSet.getNString("username"), resultSet.getNString("password"));
         return tu;
       }
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      com.student.common.util.JdbcDruidUtil.close(resultSet, ps, connection);
+    JdbcDruidUtil.close(resultSet, ps, connection);
     }
     return null;
   }

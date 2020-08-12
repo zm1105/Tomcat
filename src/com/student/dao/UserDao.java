@@ -1,7 +1,7 @@
 package com.student.dao;
 
 
-import com.student.entity.user;
+import com.student.entity.User;
 
 /**
  * @author : zhoumin
@@ -13,5 +13,5 @@ public interface UserDao {
    * @param user
    * @return
    */
-  user loginUser(user user);
+  User loginUser(User user);
 }

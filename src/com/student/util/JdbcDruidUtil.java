@@ -1,4 +1,4 @@
-package com.student.common.util;
+package com.student.util;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 

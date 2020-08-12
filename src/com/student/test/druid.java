@@ -1,6 +1,6 @@
-package com.student.common.test;
+package com.student.test;
 
-import com.student.common.util.JdbcDruidUtil;
+import com.student.util.JdbcDruidUtil;
 
 import java.sql.SQLException;
 

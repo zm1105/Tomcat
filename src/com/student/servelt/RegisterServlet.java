@@ -2,7 +2,7 @@ package com.student.servelt;
 
 
 import com.student.dao.registUserDao;
-import com.student.entity.user;
+import com.student.entity.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +20,7 @@ public class RegisterServlet extends HttpServlet {
 
     String username = request.getParameter("username");
     String password = request.getParameter("password");
-    user user = new user(username, password);
+    User user = new User(username, password);
 
     registUserDao userDao = new registUserDao();
     int res = userDao.creatUser(user);

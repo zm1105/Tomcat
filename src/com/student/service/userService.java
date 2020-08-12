@@ -1,7 +1,7 @@
 package com.student.service;
 
 
-import com.student.entity.user;
+import com.student.entity.User;
 import com.student.factory.userDaoFactory;
 
 /**
@@ -21,7 +21,7 @@ public class userService {
    * @param
    * @return
    */
-  public user userLoginService(user user) {
+  public User userLoginService(User user) {
     return userDao.loginUser(user);
   }
 }

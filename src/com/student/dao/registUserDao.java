@@ -1,7 +1,8 @@
 package com.student.dao;
 
 
-import com.student.entity.user;
+import com.student.entity.User;
+import com.student.util.JdbcDruidUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,13 +14,13 @@ import java.sql.SQLException;
  */
 
 public class registUserDao {
-  public int creatUser(user user) {
+  public int creatUser(User user) {
 
     Connection connection = null;
     PreparedStatement preparedStatement = null;
     try {
 
-      connection = com.student.common.util.JdbcDruidUtil.getConnection();
+      connection = JdbcDruidUtil.getConnection();
 
       String sql = "insert into user (id,username,password)values(null,?,?)";
 
