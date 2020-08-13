@@ -42,23 +42,18 @@
             <td>简介</td>
         </tr>
 
-        <td><% List<User> ul = (List<User>) session.getAttribute("userList");
+            <td><% List<User> ul = (List<User>) session.getAttribute("userList");
                 for (User d : ul) { %>
-            <tr align="center">
-                <td><%=d.getId()%>
-                </td>
-                <td><%= d.getUsername()%>
-                </td>
-                <td><%=d.getGender()%>
-                </td>
-                <td><%=d.getEmail()%>
-                </td>
-                <td><%=d.getBirthday()%>
-                </td>
-                <td><%=d.getRemarks()%>
-                </td>
-            </tr>
-
+                <tr align="center">
+            <td><%=d.getId()%></td>
+            <td><%= d.getUsername()%></td>
+            <td><%=d.getGender()%></td>
+            <td><%=d.getEmail()%></td>
+            <td><%=d.getBirthday()%></td>
+            <td><%=d.getRemarks()%></td>
+            <% }
+            %> </td>
+        </tr>
     </table>
 </form>
 </body>
