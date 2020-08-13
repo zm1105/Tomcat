@@ -11,7 +11,7 @@ public class User {
   private String username;
   private String password;
   private String gender;
-  private Date birthday;
+  private String birthday;
   private String email;
   private String remarks;
 
@@ -23,11 +23,11 @@ public class User {
     this.gender = gender;
   }
 
-  public Date getBirthday() {
+  public String getBirthday() {
     return birthday;
   }
 
-  public void setBirthday(Date birthday) {
+  public void setBirthday(String birthday) {
     this.birthday = birthday;
   }
 
@@ -71,8 +71,7 @@ public class User {
     this.password = password;
   }
 
-  public User(int id, String username, String password, String gender, Date birthday, String email, String remarks) {
-    this.id = id;
+  public User( String username, String password, String gender, String birthday, String email, String remarks) {
     this.username = username;
     this.password = password;
     this.gender = gender;

@@ -31,7 +31,6 @@ public class SearchServlet extends HttpServlet {
       }
       request.getSession().setAttribute("userList", userList);
       request.getRequestDispatcher("list.jsp").forward(request, response);
-
     } catch (SQLException e) {
       e.printStackTrace();
     }

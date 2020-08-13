@@ -12,6 +12,7 @@ import java.util.List;
 public interface studentDao {
   /**
    * 查询所有学生信息
+   *
    * @return
    */
   List<User> findAll() throws SQLException;
@@ -19,8 +20,11 @@ public interface studentDao {
 
   /**
    * 查询当前页学生
+   *
    * @param currentPage
    * @return
    */
   List<User> findStudentByPage(int currentPage);
+
+
 }
