@@ -17,14 +17,4 @@ public interface studentDao {
    */
   List<User> findAll() throws SQLException;
 
-
-  /**
-   * 查询当前页学生
-   *
-   * @param currentPage
-   * @return
-   */
-  List<User> findStudentByPage(int currentPage);
-
-
 }

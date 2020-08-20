@@ -5,11 +5,8 @@ import com.student.util.JdbcDruidUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,12 +26,6 @@ public class StudentDaoImpl implements studentDao {
       e.printStackTrace();
       return null;
     }
-  }
-
-
-  @Override
-  public List<User> findStudentByPage(int currentPage) {
-    return null;
   }
 
 
