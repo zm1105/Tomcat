@@ -80,6 +80,15 @@ public class User {
     this.remarks = remarks;
   }
 
+  public User(int id, String username, String gender, String birthday, String email, String remarks) {
+    this.id = id;
+    this.username = username;
+    this.gender = gender;
+    this.birthday = birthday;
+    this.email = email;
+    this.remarks = remarks;
+  }
+
   public User(String username, String password) {
     this.username = username;
     this.password = password;
