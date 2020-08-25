@@ -196,7 +196,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                注册
+                <input type="submit" value="注册" >
             </a>&nbsp&nbsp
             <a href="#">
                 <span></span>

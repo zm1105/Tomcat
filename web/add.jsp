@@ -29,8 +29,8 @@
             <td>性别</td>
             <td>
 
-                <input type="radio" name="gender" value="0">男
-                <input type="radio" name="gender" value="1">女
+                <input type="radio" name="gender" value="男">男
+                <input type="radio" name="gender" value="女">女
             </td>
         </tr>
         <tr>

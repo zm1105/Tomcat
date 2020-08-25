@@ -40,20 +40,32 @@
             <td>邮箱</td>
             <td>生日</td>
             <td>简介</td>
+            <td>操作</td>
         </tr>
 
-            <td><% List<User> ul = (List<User>) session.getAttribute("userList");
+        <td><% List<User> ul = (List<User>) session.getAttribute("userList");
                 for (User d : ul) { %>
-                <tr align="center">
-            <td><%=d.getId()%></td>
-            <td><%= d.getUsername()%></td>
-            <td><%=d.getGender()%></td>
-            <td><%=d.getEmail()%></td>
-            <td><%=d.getBirthday()%></td>
-            <td><%=d.getRemarks()%></td>
-            <% }
-            %> </td>
-        </tr>
+            <tr align="center">
+                <td><%=d.getId()%>
+                </td>
+                <td><%= d.getUsername()%>
+                </td>
+                <td><%=d.getGender()%>
+                </td>
+                <td><%=d.getEmail()%>
+                </td>
+                <td><%=d.getBirthday()%>
+                </td>
+                <td><%=d.getRemarks()%>
+                </td>
+                <td><a href="edit.jsp">修改</a>
+                <%
+                    }
+                %>
+
+                </td>
+
+            </tr>
     </table>
 </form>
 </body>

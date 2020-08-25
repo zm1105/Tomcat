@@ -180,12 +180,12 @@
                 bottom: 100%;
             }
         }
-        #denglu,#zhuce  {
-            border: 1px solid #4e6ef2;
-            border-radius: 4px;
-            padding: 6px 14px;
-            color: #4e6ef2;
-        }
+        /*#denglu,#zhuce  {*/
+        /*    border: 1px solid #4e6ef2;*/
+        /*    border-radius: 4px;*/
+        /*    padding: 6px 14px;*/
+        /*    color: #4e6ef2;*/
+        /*}*/
 
     </style>
 </head>
@@ -208,7 +208,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <input type="submit" value="注册" id="zhuce">
+                <input type="submit" value="注册">
 
             </a>&nbsp&nbsp
             <a href="#">
@@ -216,7 +216,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <input type="submit" value="登录" id="denglu">
+                <input type="submit" value="登录" >
             </a>
         </form>
     </div>

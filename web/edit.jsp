@@ -18,17 +18,22 @@
 
 <h3>更新学生页面</h3>
 
-<form method="post" action="UpdateServlet">
+<form method="post" action="Update">
     <input type="hidden" name="sid" value="${stu.sid }">
     <table border="1" width="600">
         <tr>
+            <td>编号</td>
+            <td><input type="text" name="id"></td>
+
             <td>姓名</td>
-            <td><input type="text" name="name" ></td>
+            <td><input type="text" name="username"></td>
         </tr>
         <tr>
             <td>性别</td>
             <td>
-                <input id="man" type="radio" checked="checked" name="1"/>男<input id="woman" type="radio" name="1"/>女
+
+                <input type="radio" name="gender" value="男">男
+                <input type="radio" name="gender" value="女">女
             </td>
         </tr>
         <tr>
@@ -42,10 +47,10 @@
 
         <tr>
             <td>简介</td>
-            <td><textarea name="info" rows="3" cols="20"></textarea></td>
+            <td><textarea name="remarks" rows="3" cols="20"></textarea></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" value="更新"></td>
+            <td colspan="2"><input type="submit" value="修改"></td>
         </tr>
     </table>
 </form>
